@@ -1,0 +1,47 @@
+/* 01. Layout */
+.wrap{
+	height: 100%;
+}
+.inner-wrap{
+	max-width: 1000px;
+}
+
+// flex
+.flex{
+	display: flex;
+	&--center{
+		@extend .flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&--between{
+		@extend .flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+
+/* 02. Common Style */
+.blind{
+	position: absolute;
+	width: 1px;
+	height: 0px;
+	left: -99999px;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+
+// event
+.show{
+	display: block;
+}
+.show--hover{
+	opacity: 0;
+}
+.event--hover:hover{
+	.show--hover{
+		transition: opacity 0.4s;
+		opacity: 1;
+	}
+}

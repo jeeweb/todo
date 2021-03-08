@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>To do App</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header class="header">
+			<button type="button" class="button">List</button>
+			<button type="button" class="button">Calendar</button>
+		</header>
+		<section class="container container__list">
+			<div class="inner-wrap">
+				<div class="component flex--between">
+					<h2 class="date">Monday March 8</h2>
+					<div class="dropbox">
+						<button type="button" class="button">Today's Mood</button>
+						<select name="select__mood" id="selectMood">
+							<option value="happy">Happy</option>
+							<option value="notSpecial">Not Special</option>
+							<option value="depressed">Depressed</option>
+						</select>
+					</div>
+				</div>
+				<div class="component flex">
+					<button type="button" class="button__add">+</button>
+					<input type="text" class="input" placeholder="Add a New Task">
+				</div>
+				<div class="component">
+					<ul class="list">
+						<li class="task event--hover flex--between">
+							<div>
+								<input type="checkbox" name="task1" id="task1">
+								<label for="task1"><span class="task__name">Task 1</span></label>
+							</div>
+							<div class="show--hover flex">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="component">
+					<button type="button" class="">Today</button>
+					<button type="button" class="">Tomorrow</button>
+					<button type="button" class="">Select Date</button>
+				</div>
+			</div>
+		</section>
+		<section class="container container__calendar">
+			<div class="calendar-box">Calendar</div>
+			<div class="list-box">List</div>
+		</section>
+		<footer class="footer">
+			<p>&copy; JIEE KONG All right reserved.</p>
+		</footer>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
